@@ -1,0 +1,7 @@
+{
+  "name": "fazt-typescript-mongo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Carlos Marchena <sprintwithcarlos@pm.me>",
+  "license": "MIT"
+}
