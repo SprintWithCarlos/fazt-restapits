@@ -11,7 +11,10 @@ class UserRoutes {
     res.status(200).json(users);
   }
   public async getUser(req: Request, res: Response): Promise<void> {
-    const user = await User.findOne({ email: req.params.email });
+    const user = await User.findOne({ email: req.params.email }).populate(
+      "posts",
+      "title"
+    );
     res.status(302).json(user);
   }
   public async createUser(req: Request, res: Response): Promise<void> {
